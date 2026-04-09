@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4f5f7;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    color: #333333;
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+}
+
+.summary-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    width: 100%;
+    max-width: 1100px;
+}
+
+.summary-grid .card1 {
+    flex: 0 0 340px;
+}
+
+.card1 {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+}
+
+
+.img-box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.card1 img {
+    width: 220px;
+    height: 220px;
+    border-radius: 8px;
+}
+
+.badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #333333;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 700;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* 텍스트 영역 */
+.txt-box {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.card1 h1 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.card1 .role {
+    font-size: 13px;
+    font-weight: 700;
+}
+
+/* 파트별 역할 색상 */
+.card1 .role.frontend {
+    color: #84cc16;
+}
+
+.card1 .role.backend {
+    color: #3b82f6;
+}
+
+.card1 .role.design {
+    color: #6366f1;
+}
+
+.card1 .desc {
+    font-size: 12px;
+    color: #666666;
+    line-height: 1.5;
+    margin-top: 4px;
+}
+
+
+.detail-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+    max-width: 800px;
+}
+
+.card2 {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.card2 h1 {
+    font-size: 26px;
+}
+
+.card2 .track {
+    color: #999999;
+    font-size: 13px;
+    margin-top: 4px;
+}
+
+.card2 .sec {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.card2 h2 {
+    font-size: 16px;
+    color: #333333;
+}
+
+.card2 p,
+.card2 li {
+    font-size: 14px;
+    line-height: 1.7;
+    color: #666666;
+}
+
+.card2 ul {
+    margin-left: 18px;
+}
+
+.card2 a {
+    color: #3b82f6;
+    text-decoration: none;
+}

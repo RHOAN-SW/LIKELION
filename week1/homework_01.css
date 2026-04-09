@@ -1,0 +1,109 @@
+/* Reset 및 기본 스타일 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4f5f7;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 auto;
+    /* 위아래는 0 좌우는 오토 */
+    max-width: 1000px;
+    padding: 40px 20px;
+    gap: 30px;
+}
+
+/* 두 카드 공통 스타일 */
+.card1,
+.card2 {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 첫 번째 요약 카드 */
+.card1 {
+    max-width: 320px;
+    gap: 15px;
+    align-items: flex-start;
+}
+
+.card1 img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    align-self: center;
+    /* 사진만 특별히 중앙에 배치 */
+}
+
+.card1 h1 {
+    font-size: 22px;
+}
+
+.card1 p {
+    font-size: 14px;
+    color: #555555;
+}
+
+/* 두 번째 상세 카드 */
+.card2 {
+    width: 100%;
+    gap: 25px;
+}
+
+.card2 .head {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.card2 h1 {
+    font-size: 24px;
+}
+
+.card2 .sec {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card2 h2 {
+    font-size: 16px;
+}
+
+.card2 p,
+.card2 li {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #444444;
+}
+
+.card2 ul {
+    margin-left: 20px;
+}
+
+/* 포인트 스타일 (부모 클래스를 함께 적어 우선순위를 높임) */
+.card1 .role,
+.card2 .role {
+    color: #3b82f6;
+    font-weight: bold;
+}
+
+.card2 .track {
+    color: #888888;
+    font-size: 12px;
+}
+
+a {
+    color: #3b82f6;
+    text-decoration: none;
+}

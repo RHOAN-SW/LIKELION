@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../UNIV"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "LIONSYUDY"
+	}
+}
